@@ -1,0 +1,15 @@
+<p class="posts-num">Total posts: {{@model.length}}</p>
+<ul>
+    {{#each @model as |post|}}
+    <li class="post-data">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{post.title}}</h5>
+                <p class="card-text">{{post.body}}</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-default posts-favourite" {{on "click" (fn this.addPost post)}}>Mark as
+            favourite</button>
+    </li>
+    {{/each}}
+</ul>

@@ -48,6 +48,12 @@ a {
 button {
   font-size: 100%;
 }
+.posts-num {
+  font-weight: bold;
+}
+.posts-favourite {
+  font-style: italic;
+}
 
 p {
   line-height: 1.5;
